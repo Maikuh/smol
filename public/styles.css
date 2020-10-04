@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "MuseoModerno", cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #262626;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+#slogan {
+    color: #fafafa;
+    text-align: center;
+    padding: 1em 0;
+}
+
+#slogan-italic {
+    color: rgb(54, 195, 251);
+}
+
+#svg-wrapper {
+    width: 256px;
+    background-color: rgb(139, 222, 255);
+    display: block;
+}
+
+.logo {
+    max-width: 90%;
+    image-rendering: -moz-crisp-edges;
+}
+
+.error {
+    background: #a63446;
+    padding: 0.5rem 3rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input,
+.create,
+.reset {
+    margin: 1rem 0;
+    max-width: 100%;
+}
+
+.input {
+    font-family: inherit;
+    padding-bottom: 1rem;
+    background: none;
+    border: none;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    text-align: center;
+    font-size: 1.25rem;
+    transition: border-bottom-color 0.3s ease-in-out;
+    caret-color: rgb(139, 222, 255);
+}
+
+.input:focus {
+    outline: none;
+    border-bottom-color: rgb(139, 222, 255);
+}
+
+.input::placeholder {
+    color: #ffffff;
+    opacity: 0.7;
+}
+
+.create {
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.15rem;
+    color: #262626;
+    border: none;
+    background-color: rgb(139, 222, 255);
+    padding: 0.75em 1.25rem;
+    box-shadow: 3px 3px 0 0 #ffffff;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.create:hover {
+    box-shadow: 0 0 0 0 #ffffff;
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reset {
+    cursor: pointer;
+    color: #262626;
+    border: none;
+    background-color: rgb(255, 173, 140);
+    font-family: inherit;
+    padding: 0.75em 1.25rem;
+    box-shadow: 3px 3px 0 0 #ffffff;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.reset:hover {
+    box-shadow: 0 0 0 0 #ffffff;
+}
+
+.created {
+    color: #ffffff;
+}
+
+.created a {
+    color: inherit;
+}

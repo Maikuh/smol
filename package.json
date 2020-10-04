@@ -1,0 +1,29 @@
+{
+    "name": "smol",
+    "version": "1.0.0",
+    "description": "Simple URL Shortener RESTful API",
+    "main": "index.js",
+    "scripts": {
+        "start": "node .",
+        "dev": "nodemon -L"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@koa/router": "^9.0.1",
+        "koa": "^2.12.1",
+        "koa-bodyparser": "^4.3.0",
+        "koa-helmet": "^5.2.0",
+        "koa-logger": "^3.2.1",
+        "koa-ratelimit": "^4.2.1",
+        "koa-static": "^5.0.0",
+        "monk": "^7.3.0",
+        "nanoid": "^3.1.10",
+        "yup": "^0.29.1"
+    },
+    "devDependencies": {
+        "dotenv": "^8.2.0",
+        "nodemon": "^2.0.4"
+    }
+}
