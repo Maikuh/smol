@@ -1,0 +1,50 @@
+{
+    "name": "smol",
+    "version": "1.0.0",
+    "author": "Miguel Araujo <miguelant.araujo@gmail.com>",
+    "description": "Simple URL Shortener RESTful API with accompanying Web UI",
+    "main": "./dist/index.js",
+    "scripts": {
+        "start": "node .",
+        "build": "tsc",
+        "start:dev": "ts-node src/index.ts",
+        "dev": "tsc-watch --onSuccess \"node ./dist/index.js\"",
+        "tsc": "tsc"
+    },
+    "keywords": [],
+    "license": "ISC",
+    "dependencies": {
+        "@koa/cors": "^3.1.0",
+        "@koa/router": "^10.1.0",
+        "koa": "^2.13.1",
+        "koa-bodyparser": "^4.3.0",
+        "koa-helmet": "^5.2.0",
+        "koa-logger": "^3.2.1",
+        "koa-ratelimit": "^5.0.1",
+        "koa-static": "^5.0.0",
+        "mongodb": "^4.0.1",
+        "nanoid": "^3.1.23",
+        "yup": "^0.32.9"
+    },
+    "devDependencies": {
+        "@types/koa": "^2.13.4",
+        "@types/koa-bodyparser": "^4.3.2",
+        "@types/koa-helmet": "^6.0.4",
+        "@types/koa-logger": "^3.1.1",
+        "@types/koa-ratelimit": "^4.2.3",
+        "@types/koa-static": "^4.0.2",
+        "@types/koa__cors": "^3.0.3",
+        "@types/koa__router": "^8.0.7",
+        "@typescript-eslint/eslint-plugin": "^4.28.5",
+        "@typescript-eslint/parser": "^4.28.5",
+        "dotenv": "^8.2.0",
+        "eslint": "^7.12.1",
+        "eslint-config-standard": "^16.0.3",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-promise": "^5.0.0",
+        "ts-node": "^10.1.0",
+        "tsc-watch": "^4.4.0",
+        "typescript": "^4.3.5"
+    }
+}
