@@ -13,6 +13,17 @@ services:
         environment:
             - NODE_ENV=development
             - MONGO_URI=mongodb://mongodb/smol
+    web:
+        build: ./web
+        ports:
+            - 8080:8080
+        working_dir: /app
+        volumes:
+            - ./web/src:/app/src
+        environment:
+            - NODE_ENV=development
+            - PORT=8080
+            - VITE_API_BASE_URL=http://api:3000
     mongodb:
         image: mongo:5
         ports:

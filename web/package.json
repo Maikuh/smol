@@ -2,9 +2,9 @@
   "name": "web",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host ${HOST:-127.0.0.1} --port ${PORT:-3000}",
     "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview --host ${HOST:-127.0.0.1} --port ${PORT:-3000}"
   },
   "dependencies": {
     "vue": "^3.1.5",
